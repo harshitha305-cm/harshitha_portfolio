@@ -1,0 +1,307 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #0d0d0d, #1a1a1a);
+  color: #eaeaea;
+  line-height: 1.6;
+  min-height: 100vh;
+  padding-bottom: 60px;
+}
+
+/* Navbar */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  background: #0d0d0d;
+  border-bottom: 1px solid #222;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: #bbb;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #ffb87a;
+}
+
+/* Intro Section */
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 80px 60px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.intro-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.intro-text h2 {
+  font-size: 2.5rem;
+}
+
+.intro-text h2 span {
+  color: #ffb87a;
+}
+
+.subtitle {
+  margin: 10px 0;
+  color: #ccc;
+  font-style: italic;
+}
+
+.description {
+  margin-bottom: 25px;
+}
+
+.buttons .btn,
+.buttons .btn-outline {
+  padding: 10px 10px;
+  height: 20px;
+  width: 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.btn {
+  background: #ffb87a;
+  color: #111;
+}
+
+.btn:hover {
+  background: #ffcb9a;
+  box-shadow: 0 0 10px #ffb87a;
+}
+
+.btn-outline {
+  border: 1px solid #ffb87a;
+  color: #ffb87a;
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: #ffb87a;
+  color: #111;
+  box-shadow: 0 0 10px #ffb87a;
+}
+
+/* Cards */
+.side-info {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background: #121212;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(255, 184, 122, 0.2);
+}
+
+.card h3 {
+  color: #ffb87a;
+  margin-bottom: 10px;
+}
+
+/* Resume Page */
+.content {
+  padding: 80px 60px;
+  min-height: calc(100vh - 150px);
+}
+
+.content h2 {
+  color: #ffb87a;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #ffb87a;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+.resume-section h3 {
+  color: #ffb87a;
+  margin-top: 25px;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.resume-section p,
+.resume-section li {
+  font-size: 1.05rem;
+  color: #ddd;
+}
+
+.resume-section ul {
+  margin-left: 20px;
+  list-style-type: disc;
+}
+
+.resume-section .btn {
+  display: inline-block;
+  margin-top: 25px;
+}
+
+/* Bio-data Table */
+.biodata-table {
+  width: 100%;
+  max-width: 600px;
+  border-collapse: collapse;
+}
+
+.biodata-table td {
+  padding: 10px;
+  border-bottom: 1px solid #333;
+}
+
+/* Contact Form */
+.contact-form {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.contact-form h2 {
+  color: #ffb87a;
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+}
+
+.contact-form form {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  color: #fff;
+  border-radius: 8px;
+  padding: 14px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #ffb87a;
+  box-shadow: 0 0 6px #ffb87a;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 14px;
+  background: #ffb87a;
+  border: none;
+  border-radius: 8px;
+  color: #111;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #ffcb9a;
+  box-shadow: 0 0 10px #ffb87a;
+  transform: translateY(-2px);
+}
+
+
+.contact-form input,
+.contact-form textarea {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  color: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #ffb87a;
+  box-shadow: 0 0 6px #ffb87a;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  color: #888;
+  background: transparent;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+/* --- Download Resume Button --- */
+.resume-download {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.download-btn {
+  background: #ffb87a;
+  color: #111;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 12px 28px;
+  border-radius: 8px;
+  display: inline-block;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.download-btn:hover {
+  background: #ffcb9a;
+  box-shadow: 0 0 12px #ffb87a;
+  transform: translateY(-2px);
+}
