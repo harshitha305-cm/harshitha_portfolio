@@ -339,3 +339,26 @@ footer {
   box-shadow: 0 0 12px #ffb87a;
   transform: translateY(-2px);
 }
+/* Make all text inside biodata table visible on dark background */
+.biodata-table td {
+  color: #f0f0f0; /* light gray for better readability */
+}
+
+/* Make the label part (like Name:, Date of Birth:) slightly bolder and lighter */
+.biodata-table strong {
+  color: #ffa74d; /* soft orange or any color you like */
+  font-weight: 600;
+}
+
+/* Optional – Add subtle line separation */
+.biodata-table tr {
+  border-bottom: 1px solid #333;
+}
+
+/* Optional – add some spacing and alignment */
+.biodata-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 16px;
+  margin-top: 10px;
+}
